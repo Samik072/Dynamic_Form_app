@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header, footer {
+  background-color: #2c3e50; /* Dark Blue */
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+main {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+/* Form Layout */
+select, input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+select:focus, input:focus {
+  border-color: #4caf50; /* Green border on focus */
+  outline: none;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #4caf50; /* Green button */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+button:disabled {
+  background-color: #dcdcdc; /* Light gray for disabled buttons */
+  cursor: not-allowed;
+}
+
+span {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+table th {
+  background-color: #2c3e50; /* Dark blue for table headers */
+  color: white;
+}
+
+table td button {
+  background-color: #3498db; /* Blue button */
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+table td button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+table td button:disabled {
+  background-color: #bdc3c7; /* Light gray for disabled buttons */
+  cursor: not-allowed;
+}
+
+/* Progress Bar Styling */
+.progress-bar-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  background-color: #4caf50; /* Green progress bar */
+  height: 10px;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+/* Responsive Layout for Laptop and Mobile */
+@media (max-width: 1024px) {
+  .App {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  main {
+    padding: 15px;
+    margin: 0 10px;
+  }
+
+  label {
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+
+  table th, table td {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .progress-bar-container {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 15px;
+    margin: 0;
+  }
+
+  select, input, button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  table th, table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  table td button {
+    padding: 5px 10px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .progress-bar-container {
+    margin-top: 15px;
+  }
+}
+
+/* Mobile First Styles */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .App {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  main {
+    padding: 10px;
+    margin: 0;
+  }
+
+  select, input, button {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  table th, table td {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+
+  table td button {
+    padding: 4px 8px;
+  }
+
+  .progress-bar-container {
+    margin-top: 10px;
+  }
+}
